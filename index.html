@@ -4,33 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Swahili poem Generator</title>
   </head>
   <body>
     <div class="container">
       <header><h1>Swahili AI generator</h1></header>
 
-      <main></main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the title of the poem"
-          class="instructions"
-        />
-        <input
-          type="submit"
-          autofocus
-          required
-          autocomplete="off"
-          class="submit-button"
-        />
-      </form>
-      <div class="poem">
-        Baba nakushukuru kwa kunipa uhai hata sasa,
-        <br />
-        Nashukuru kwa kunisamehe na kunitakasa,
-      </div>
-      <fooer class="footer">
+      <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the title of the poem"
+            class="instructions"
+          />
+          <input
+            type="submit"
+            autofocus
+            required
+            autocomplete="off"
+            class="submit-button"
+          />
+        </form>
+        <div class="poem" id="poem"></div>
+      </main>
+      <footer>
         This AI project was coded by
         <a href="https://github.com/Monica-G30" target="_blank"
           >Monica Gikaru</a
@@ -45,7 +43,7 @@
         <a href="https://swahili-poems-generator.onrender.com" target="_blank"
           >Render.
         </a>
-      </fooer>
+      </footer>
     </div>
     <script src="src/index.js"></script>
   </body>
