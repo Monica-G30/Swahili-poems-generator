@@ -7,32 +7,46 @@
     <title>AI Swahili poem Generator</title>
   </head>
   <body>
-    <header><h1>Swahili AI generator</h1></header>
+    <div class="container">
+      <header><h1>Swahili AI generator</h1></header>
 
-    <main></main>
-    <form>
-      <input type="text" placeholder="Enter the title of the poem" />
-      <input type="submit" autofocus required autocomplete="off" />
-    </form>
-    <div>
-      Baba nakushukuru kwa kunipa uhai hata sasa,
-      <br />
-      Nashukuru kwa kunisamehe na kunitakasa,
+      <main></main>
+      <form>
+        <input
+          type="text"
+          placeholder="Enter the title of the poem"
+          class="instructions"
+        />
+        <input
+          type="submit"
+          autofocus
+          required
+          autocomplete="off"
+          class="submit-button"
+        />
+      </form>
+      <div class="poem">
+        Baba nakushukuru kwa kunipa uhai hata sasa,
+        <br />
+        Nashukuru kwa kunisamehe na kunitakasa,
+      </div>
+      <fooer class="footer">
+        This AI project was coded by
+        <a href="https://github.com/Monica-G30" target="_blank"
+          >Monica Gikaru</a
+        >
+        and is
+        <a
+          href="https://github.com/Monica-G30/my-first-shecodes-project"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and is hosted on
+        <a href="https://swahili-poems-generator.onrender.com" target="_blank"
+          >Render.
+        </a>
+      </fooer>
     </div>
-    <fooer>
-      This AI project was coded by
-      <a href="https://github.com/Monica-G30" target="_blank">Monica Gikaru</a>
-      and is
-      <a
-        href="https://github.com/Monica-G30/my-first-shecodes-project"
-        target="_blank"
-        >open-sourced on Github</a
-      >
-      and is hosted on
-      <a href="https://swahili-poems-generator.onrender.com" target="_blank"
-        >Render.
-      </a>
-    </fooer>
     <script src="src/index.js"></script>
   </body>
 </html>
