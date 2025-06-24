@@ -23,10 +23,6 @@ function generatePoem(event) {
      ⏳ Generating a Swahili poem about ${instructionsInput.value}
     </div>`;
 
-  console.log("Generating poem");
-  console.log(`prompt.${prompt}`);
-  console.log(`context.${context}`);
-
   axios.get(apiUrl).then(displayPoem);
 }
 
